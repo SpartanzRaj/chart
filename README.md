@@ -1,3 +1,32 @@
-**Donut Chart**
-Add the dependency to build.gradle file .
-`implementation  'android.piechart:piechart:1.0.3'`
+### PieChart
+
+An android Library to load data in piechart
+Dependency
+   ` implementation  'android.piechart:piechart:1.0.3'`
+## Sample Code
+Add piechart to XML files
+```xml
+<android.lib.chart.PieChart
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+```
+
+Add Java/kotlin code
+```java
+float d[]={10.0f,30f,55.0f,5.0f};
+        String n[]={"One","Two","Three","Four"};
+        int colors[]={Color.GREEN,Color.RED,Color.MAGENTA,Color.BLUE};
+        PieChart pieChart = findViewById(R.id.chart);
+        pieChart.setMapValues(d);
+        pieChart.setMapValueName(n);
+        pieChart.show();
+```
+
+
+
+

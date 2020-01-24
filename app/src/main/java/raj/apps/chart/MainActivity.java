@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         PieChart pieChart = findViewById(R.id.chart);
         pieChart.setMapValues(d);
         pieChart.setMapValueName(n);
-        pieChart.setColors(colors);
         pieChart.show();
 
 

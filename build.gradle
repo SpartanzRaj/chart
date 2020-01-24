@@ -19,14 +19,37 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {url 'https://maven.google.com/'}
         google()
         jcenter()
+
         
     }
 }
 
 ext {
     compileSdkVersion = 28
+    bintrayRepo = 'chart'
+    bintrayName = 'android.lib.chart'
+
+    publishedGroupId = 'android.piechart'
+    libraryName = 'android.lib.chart'
+    artifact = 'piechart'
+
+    libraryDescription = 'A library to create piechart in android'
+
+    siteUrl = 'https://github.com/SpartanzRaj/chart'
+    gitUrl = 'https://github.com/SpartanzRaj/chart.git'
+
+    libraryVersion = '1.0.4'
+
+    developerId = 'rajakumar'
+    developerName = 'Raja'
+    developerEmail = 'raj.nivuz@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 1.1'
+    licenseUrl = 'http://apache.org/licenses/LICENSE-1.1'
+    allLicenses = ["Apache-1.1"]
 }
 
 task clean(type: Delete) {

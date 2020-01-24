@@ -2,33 +2,15 @@ apply plugin: 'com.android.application'
 
 ext {
     bintrayRepo = 'maven'
-//    bintrayName = 'fb-like'
-
     publishedGroupId = 'android.piechart:piechart'
-//    libraryName = 'FBLike'
-//    artifact = 'fb-like'
-
-    //libraryDescription = 'A wrapper for Facebook Native Like Button (LikeView) on Android'
-
-//    siteUrl = 'https://github.com/nuuneoi/FBLikeAndroid'
-//    gitUrl = 'https://github.com/nuuneoi/FBLikeAndroid.git'
-//
     libraryVersion = '1.0.4'
-//
-//    developerId = 'nuuneoi'
-//    developerName = 'Sittiphol Phanvilai'
-//    developerEmail = 'sittiphol@gmail.com'
-//
-//    licenseName = 'The Apache Software License, Version 2.0'
-//    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-//    allLicenses = ["Apache-2.0"]
 }
 
 android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "raj.apps.chart"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -50,15 +32,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'android.piechart:piechart:1.0.3'
 
 }
-
-
-//task javadoc(type: Javadoc) {
-//    source = android.sourceSets.main.java.srcDirs
-//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-//    classpath += configurations.javadocDeps
-//}
-
-//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

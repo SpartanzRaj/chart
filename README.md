@@ -3,6 +3,10 @@
 An android Library to load data in piechart
 Dependency
    ` implementation  'android.piechart:piechart:1.0.3'`
+   
+   ## Samples
+   <img src="https://user-images.githubusercontent.com/19813264/73049990-592e8100-3ea4-11ea-97bd-5a21a680af36.png" alt="drawing" width="200"/>
+   
 ## Sample Code
 Add piechart to XML files
 ```xml
